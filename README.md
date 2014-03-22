@@ -15,7 +15,7 @@ Installation
 --------------
 
 ```sh
-$ git clone git@github.com:pusherman/fyibn.git fyibn
+$ git clone https://github.com/pusherman/fyibn.git fyibn
 $ cd fyibn
 
 $ composer install
