@@ -17,8 +17,11 @@ Installation
 ```sh
 $ git clone https://github.com/pusherman/fyibn.git fyibn
 $ cd fyibn
+```
 
+Create database as defined in app/config/database.php
+
+```sh
 $ composer install
 $ php artisan migrate
 ```
-
