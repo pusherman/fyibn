@@ -19,7 +19,7 @@ $ git clone https://github.com/pusherman/fyibn.git fyibn
 $ cd fyibn
 ```
 
-Create database as defined in app/config/database.php
+Create database as defined in [app/config/database.php](/pusherman/fyibn/blob/master/app/config/database.php)
 
 ```sh
 $ composer install
