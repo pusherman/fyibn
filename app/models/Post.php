@@ -49,6 +49,14 @@ class Post extends Eloquent
     }
 
     /**
+     * Who made the last comment
+     */
+    public function lastCommentBy()
+    {
+        return $this->comments()->orderBy('created_at', 'desc')->first()->user->username;
+    }
+
+    /**
      * Check to see if the user has viewed the post
      */    
     public function isNew()
