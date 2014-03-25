@@ -31,7 +31,8 @@
                     </strong> 
                     <br>
                     <small>
-                        <span id="dope-count-{{ $post->id }}">1</span> point
+                        <span id="dope-count-{{ $post->id }}">{{ $post->points }}</span> 
+                        {{ str_plural('point', $post->points) }}
                         &nbsp; Added {{ $post->created_at->diffForHumans() }} by
                         {{ $post->user->username }}
                     </small>
