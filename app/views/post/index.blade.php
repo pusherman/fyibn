@@ -40,9 +40,15 @@
                 
                 <td style="width:20%">
                     <div class="pull-right">
-                        <a href="post/view/{{ $post->id }}#new">2 Comments</a>
-                        <br>
-                        <small>last by corey</small>
+                        <a href="post/view/{{ $post->id }}#new">
+                            {{ $post->comments->count() }} {{str_plural('Comment', $post->comments->count()) }}
+                        </a>
+
+                        @if($post->comments->count())
+                            <br>
+                            <small>last by {{ $post->lastCommentBy() }}</small>
+                        @endif
+
                     </div>
                 </td>
 
