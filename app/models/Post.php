@@ -48,6 +48,11 @@ class Post extends Eloquent
         return $this->orderBy('created_at', 'desc');
     }
 
+    public function getPointsAttribute()
+    {
+        return $this->favorites->count();
+    }
+
     /**
      * Who made the last comment
      */
