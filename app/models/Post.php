@@ -16,6 +16,14 @@ class Post extends Eloquent
         return $this->hasOne('Wish');
     }
 
+	/**
+	 * Post to favorites relationship
+	 */
+	public function lovers()
+	{
+		return $this->hasMany('Favorite');
+	}
+
     /**
      * Post to user relationship
      */
@@ -48,9 +56,12 @@ class Post extends Eloquent
         return $this->orderBy('created_at', 'desc');
     }
 
+	/**
+	 * Find the number of points (ie how many people loved it)
+	 */
     public function getPointsAttribute()
     {
-        return $this->favorites->count();
+        return $this->lovers->count();
     }
 
     /**
