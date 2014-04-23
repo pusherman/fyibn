@@ -11,10 +11,6 @@
 |
 */
 
-Route::get('testing', function() {
-    return View::make('post.test');   
-});
-
 Route::get('login', array(
     'as' => 'login',
     'uses' => 'AuthController@showLogin',
