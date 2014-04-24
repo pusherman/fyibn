@@ -3,8 +3,8 @@
 class Post extends Eloquent
 {
     protected $fillable = array(
-        'title', 
-        'url', 
+        'title',
+        'url',
         'user_id',
     );
 
@@ -37,7 +37,7 @@ class Post extends Eloquent
      */
     public function comments()
     {
-        return $this->hasMany('Comment');        
+        return $this->hasMany('Comment');
     }
 
     /**
@@ -74,11 +74,9 @@ class Post extends Eloquent
 
     /**
      * Check to see if the user has viewed the post
-     */    
+     */
     public function isNew()
     {
         return is_null(History::of(Auth::user())->for($this)->first());
     }
-
-
 }
