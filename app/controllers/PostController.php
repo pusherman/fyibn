@@ -8,7 +8,7 @@ class PostController extends BaseController
      */
 	public function showIndex()
 	{
-	    $posts = Post::latest()->paginate(2);
+	    $posts = Post::latest()->paginate(25);
         
 		return View::make('post.index', [
 		    'posts' => $posts
