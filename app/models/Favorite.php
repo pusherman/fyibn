@@ -22,4 +22,25 @@ class Favorite extends Eloquent
     {
         return $this->belongsTo('User');
     }
+
+    /**
+     * Toggle a favorite on or off based on if
+     * has already been done
+     */
+    public static function toggle(Post $post)
+    {
+        $favorite = self::firstOrNew(array(
+            'user_id' => Auth::user()->id,
+            'post_id' => $post->id
+        ));
+
+        if ($favorite->id)
+        {
+            $favorite->delete();
+        }
+        else
+        {
+            $favorite->save();
+        }
+    }
 }
