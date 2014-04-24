@@ -2,6 +2,11 @@
 
 class Favorite extends Eloquent
 {
+    protected $fillable = array(
+        'user_id',
+        'post_id',
+    );
+
     /**
      * History to post relationship
      */
