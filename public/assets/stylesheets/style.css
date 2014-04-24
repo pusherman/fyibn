@@ -67,6 +67,10 @@ body {
   font-size: 30px;
 }
 
+.masthead-brand a {
+  text-decoration: none;
+}
+
 form.form-signin h3 {
   font-size: 50px;
   width: 300px;
@@ -269,6 +273,7 @@ color: #ddd;
 
 .pagination>.disabled>span, .pagination>.disabled>span:hover, .pagination>.disabled>span:focus, .pagination>.disabled>a, .pagination>.disabled>a:hover, .pagination>.disabled>a:focus {
 background-color: transparent;
+border: 1px solid #555;
 }
 
 .pagination li a:hover, .pagination li.active a {
@@ -326,4 +331,9 @@ padding-left: 10px;
 
 #post-view div.span1 {
 margin-top: 10px;
+}
+
+.centered {
+width: 100%;
+text-align: center;
 }
