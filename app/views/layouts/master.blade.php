@@ -34,7 +34,7 @@
             @if (Auth::check())
                 <div class="masthead clearfix">
                     <div class="inner">
-                        <h3 class="masthead-brand">FYIBN</h3>
+                        <h3 class="masthead-brand">{{ link_to_route('posts', 'FYIBN') }}</h3>
                         <ul class="nav masthead-nav">
                             {{ HTML::nav_item('/', 'Home' ) }}
                             {{ HTML::nav_item('post', 'Post' ) }}
