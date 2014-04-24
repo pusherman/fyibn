@@ -17,9 +17,7 @@
         @foreach($posts as $post)
             <tr>
                 <td>
-                    <div class="dopeable dopped" data-object-type="post" data-object-id="{{ $post->id }}">
-                        <span></span>
-                    </div>
+                    @include('post._dope_button')
                 </td>
                 <td>
                     <strong>

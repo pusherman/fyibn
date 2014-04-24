@@ -6,9 +6,7 @@
 <div class="page-header">
     <div class="row" id="post-view">
         <div class="col-md-1">
-            <div class="dopeable dopped" data-object-type="post" data-object-id="{{ $post->id }}" style="margin-top:20px">
-                <span></span>
-            </div>
+            @include('post._dope_button')
         </div>
 
         <div class="col-md-11">
