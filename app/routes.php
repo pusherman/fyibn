@@ -57,11 +57,15 @@ Route::group(array('before' => 'auth'), function()
         'as' => 'inbox',
         'uses' => 'MessageController@index'
     ));
-    
 
     Route::post('post/toggle-favorite/{postId}', array(
         'as' => 'postToggleFavorite',
         'uses' => 'PostController@toggleFavorite'
+    ));
+
+    Route::get('search', array(
+        'as' =>'search',
+        'uses' => 'SearchController@find'
     ));
 });
 

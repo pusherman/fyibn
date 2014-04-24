@@ -8,7 +8,9 @@
         <small><span class="toggle-search pull-right glyphicon glyphicon-search"></span></small>
     </h1>
     <div class="search hidden">
-        <input type="text" placeholder="Search&hellip;">
+        <form action="/search/all" method="get" accept-charset="utf-8">
+            <input type="text" name="query" placeholder="Search&hellip;">
+        </form>
     </div>
 </div>
 
