@@ -64,4 +64,13 @@ class User extends Eloquent implements UserInterface, RemindableInterface {
     {
         return $this->email;
     }
+
+    public function hasFavorited(Post $post)
+    {
+        $favorite = Favorite::where('user_id', '=', Auth::user()->id)
+                        ->where('post_id', '=', $post->id)
+                        ->first();
+
+        return $favorite instanceof Favorite;
+    }
 }
