@@ -136,11 +136,16 @@ height: 50px;
 width: 50px;
 }
 
+.dopeable.dopped {
+background: url('../images/record-on.50.png') no-repeat center;
+}
+
 .dopped span {
 font-family: 'Yesteryear', cursive;
 color: rgba(255,255,255,1);
-line-height: 40px;
+line-height: 46px;
 font-size: 26px;
+margin-left: 6px;
 }
 /*
  * Footer
@@ -324,14 +329,6 @@ border: none;
 color: inherit;
 }
 
-#post-view .dopeable {
-padding-top: 5px;
-padding-left: 10px;
-}
-
-#post-view div.span1 {
-margin-top: 10px;
-}
 
 .centered {
 width: 100%;
