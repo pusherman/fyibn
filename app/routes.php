@@ -58,5 +58,10 @@ Route::group(array('before' => 'auth'), function()
         'uses' => 'MessageController@index'
     ));
     
+
+    Route::post('post/toggle-favorite/{postId}', array(
+        'as' => 'postToggleFavorite',
+        'uses' => 'PostController@toggleFavorite'
+    ));
 });
 
