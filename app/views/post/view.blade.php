@@ -21,11 +21,11 @@
                     @endif
                     <br>
                     <small>
-                        by {{ $post->user->username }} 
+                        by {{ $post->user->username }}
                         {{ $post->created_at->diffForHumans() }}
                     </small>
                 </h2>
-            </section>    
+            </section>
         </div>
     </div>
 </div>

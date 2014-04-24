@@ -27,7 +27,7 @@ Route::group(array('before' => 'auth'), function()
         'as' => 'posts',
         'uses' => 'PostController@showIndex'
     ));
-    
+
     Route::get('logout', array(
         'as' => 'logout',
         'uses' => 'AuthController@logout'
@@ -42,8 +42,8 @@ Route::group(array('before' => 'auth'), function()
         'as' => 'createPost',
         'uses' => 'PostController@create'
     ));
-    
-    Route::post('post/{postId}/comment', array(
+
+    Route::post('post/comment/{postId}', array(
         'as' => 'createComment',
         'uses' => 'CommentController@create',
     ));

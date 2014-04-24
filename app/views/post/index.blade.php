@@ -28,16 +28,16 @@
                         @endif
 
                         {{ link_to_route('postView', $post->title, ['id' => $post->id]) }}
-                    </strong> 
+                    </strong>
                     <br>
                     <small>
-                        <span id="dope-count-{{ $post->id }}">{{ $post->points }}</span> 
+                        <span id="dope-count-{{ $post->id }}">{{ $post->points }}</span>
                         {{ str_plural('point', $post->points) }}
                         &nbsp; Added {{ $post->created_at->diffForHumans() }} by
                         {{ $post->user->username }}
                     </small>
                 </td>
-                
+
                 <td style="width:20%">
                     <div class="pull-right">
                         <a href="post/view/{{ $post->id }}#new">
