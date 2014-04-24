@@ -39,7 +39,9 @@ class PostController extends BaseController
             $wish = (new Wish)->post()->associate($post)->save();
         }
 
-        return Redirect::to('/');
+        return Redirect::route('postView', [
+        	'postId' => $post->id
+        ]);
 	}
 
     /**
