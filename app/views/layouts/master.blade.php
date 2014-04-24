@@ -38,7 +38,7 @@
                         <ul class="nav masthead-nav">
                             {{ HTML::nav_item('/', 'Home' ) }}
                             {{ HTML::nav_item('post', 'Post' ) }}
-                            {{ HTML::nav_item('inbox', 'Inbox') }}
+                            {{-- HTML::nav_item('inbox', 'Inbox') --}}
                             {{-- HTML::nav_item("users", 'Users' ) --}}
                         </ul>
                     </div>
