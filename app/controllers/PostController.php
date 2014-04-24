@@ -40,21 +40,34 @@ class PostController extends BaseController
         }
 
         return Redirect::route('postView', [
-        	'postId' => $post->id
+            'postId' => $post->id
         ]);
-	}
+    }
 
     /**
      * View a post
      */
-	public function view($id)
-	{
-    	$post = Post::findOrFail($id);
+    public function view($id)
+    {
+        $post = Post::findOrFail($id);
 
         History::record($post);
 
-    	return View::make('post.view', [
-    	    'post' => $post
-    	]);
-	}
+        return View::make('post.view', [
+            'post' => $post
+        ]);
+    }
+
+    /**
+     * Toggle a favorite on or off of a post
+     */
+    public function toggleFavorite($id)
+    {
+        $post = Post::findOrFail($id);
+        Favorite::toggle($post);
+
+        return Response::json(array(
+            'count' => $post->points
+        ));
+    }
 }
