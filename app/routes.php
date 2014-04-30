@@ -63,7 +63,7 @@ Route::group(array('before' => 'auth'), function()
         'uses' => 'PostController@toggleFavorite'
     ));
 
-    Route::get('search', array(
+    Route::get('search/all', array(
         'as' =>'search',
         'uses' => 'SearchController@find'
     ));
