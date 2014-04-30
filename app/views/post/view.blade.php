@@ -5,7 +5,7 @@
 
 <div class="page-header">
     <div class="row" id="post-view">
-        <div class="col-md-1">
+        <div class="col-md-1 dope-button-holder">
             @include('post._dope_button')
         </div>
 
