@@ -11,6 +11,7 @@ class SearchController extends BaseController
         $query = Input::get('query');
 
         $posts = Post::latest()
+                    ->distinct()
                     ->leftJoin('comments', 'posts.id', '=', 'comments.post_id')
                     ->select('posts.*')
                     ->where('posts.title', 'like', "%$query%")
