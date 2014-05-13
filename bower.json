@@ -1,0 +1,23 @@
+{
+  "name": "fyibn",
+  "version": "0.0.0",
+  "homepage": "https://github.com/pusherman/fyibn",
+  "authors": [
+    "Corey Wilson <phpuser@gmail.com>"
+  ],
+  "description": "a simple forum",
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "public/assets/componets",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "~3.1.1",
+    "mousetrap": "~1.4.6"
+  }
+}
