@@ -1,8 +1,12 @@
 (function(){
-    // toggle search
-    $('.toggle-search').click(function(){
+    var toggleSearch = function() {
         $('.search').toggleClass('hidden');
-    });
+        $('.search input').focus();
+    }
+
+    // toggle search
+    Mousetrap.bind('/', toggleSearch, 'keyup');
+    $('.toggle-search').click(toggleSearch);
 
     // mark a post as your favorite
     var requestInProgress = [];

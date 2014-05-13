@@ -49,9 +49,9 @@
                 @if (Session::has('error'))
                     <div class="alert alert-danger alert-dismissable">
                         <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
-                        
+
                         {{{ Session::get('error') }}}
-                    </div> 
+                    </div>
                 @endif
 
 
@@ -72,6 +72,7 @@
 
 <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
 <script src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+<script src="/assets/componets/mousetrap/mousetrap.min.js"></script>
 <script src="/assets/javascripts/fyjsn.js"></script>
 </body>
 </html>
