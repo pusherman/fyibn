@@ -23,7 +23,7 @@ Create database as defined in [app/config/database.php](app/config/database.php)
 
 ```sh
 $ composer install
-$ php artisan migrate
+$ php artisan migrate --seed
 ```
 
 Run the local server
@@ -31,3 +31,5 @@ Run the local server
 $ cd public
 $ php -S localhost:8000 ../server.php
 ```
+
+Login using admin/password
