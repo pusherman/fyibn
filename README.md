@@ -25,3 +25,9 @@ Create database as defined in [app/config/database.php](app/config/database.php)
 $ composer install
 $ php artisan migrate
 ```
+
+Run the local server
+```sh
+$ cd public
+$ php -S localhost:8000 ../server.php
+```
