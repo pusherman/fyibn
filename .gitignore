@@ -1,4 +1,7 @@
 app/storage/*
+/app/config/local/*
+/app/config/staging/*
+/app/config/production/*
 /bootstrap/compiled.php
 /vendor
 composer.phar
