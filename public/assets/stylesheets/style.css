@@ -319,10 +319,6 @@ height: inherit;
 color:#fff;
 }
 
-.comment-list .row > blockquote {
-    border-left:0;
-}
-
 .alert-danger {
 background-color: #D43545;
 border: none;
