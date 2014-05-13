@@ -54,9 +54,7 @@
                     </div>
                 @endif
 
-                <div class="container">
-                    @yield('content')
-                </div>
+                @yield('content')
             </div>
 
             <div class="mastfoot">
