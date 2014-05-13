@@ -27,44 +27,36 @@
 
 <body>
 
-<div class="site-wrapper" style="clear:both">
-    <div class="site-wrapper-inner">
-        <div class="cover-container">
+<div class="container">
 
-            @if (Auth::check())
-                <div class="masthead clearfix">
-                    <div class="inner">
-                        <h3 class="masthead-brand">{{ link_to_route('posts', 'FYIBN') }}</h3>
-                        <ul class="nav masthead-nav">
-                            {{ HTML::nav_item('/', 'Home' ) }}
-                            {{ HTML::nav_item('post', 'Post' ) }}
-                            {{-- HTML::nav_item('inbox', 'Inbox') --}}
-                            {{-- HTML::nav_item("users", 'Users' ) --}}
-                        </ul>
-                    </div>
-                </div>
-            @endif
-
-            <div class="inner cover">
-                @if (Session::has('error'))
-                    <div class="alert alert-danger alert-dismissable">
-                        <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
-
-                        {{{ Session::get('error') }}}
-                    </div>
-                @endif
-
-                @yield('content')
+    @if (Auth::check())
+        <div class="masthead clearfix">
+            <div class="inner">
+                <h3 class="masthead-brand">{{ link_to_route('posts', 'FYIBN') }}</h3>
+                <ul class="nav masthead-nav">
+                    {{ HTML::nav_item('/', 'Home' ) }}
+                    {{ HTML::nav_item('post', 'Post' ) }}
+                    {{-- HTML::nav_item('inbox', 'Inbox') --}}
+                    {{-- HTML::nav_item("users", 'Users' ) --}}
+                </ul>
             </div>
-
-            <div class="mastfoot">
-                <div class="inner">
-                    <p>a website for us, not you.</p>
-                </div>
-            </div>
-
         </div>
+    @endif
 
+        @if (Session::has('error'))
+            <div class="alert alert-danger alert-dismissable">
+                <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
+
+                {{{ Session::get('error') }}}
+            </div>
+        @endif
+
+    @yield('content')
+
+    <div class="mastfoot">
+        <div class="inner">
+            <p>a website for us, not you.</p>
+        </div>
     </div>
 
 </div>
