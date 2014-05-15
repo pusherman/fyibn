@@ -263,6 +263,10 @@ height: inherit;
 color:#fff;
 }
 
+.alert {
+margin-top:25px;
+}
+
 .alert-danger {
 background-color: #D43545;
 border: none;
