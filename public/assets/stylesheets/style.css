@@ -56,12 +56,6 @@ body {
   text-decoration: none;
 }
 
-form.form-signin h3 {
-  font-size: 50px;
-  width: 300px;
-  text-align: center;
-  padding-bottom:20px
-}
 
 
 .masthead-nav > li {
@@ -178,6 +172,13 @@ margin-left: 6px;
   margin-bottom: 10px;
   border-top-left-radius: 0;
   border-top-right-radius: 0;
+}
+
+form.form-signin h3 {
+  font-size: 50px;
+  width: 300px;
+  text-align: center;
+  padding-bottom:20px
 }
 
 .table>thead>tr>th, .table>tbody>tr>th, .table>tfoot>tr>th, .table>thead>tr>td, .table>tbody>tr>td, .table>tfoot>tr>td {
