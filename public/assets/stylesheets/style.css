@@ -72,6 +72,7 @@ body {
   color: #fff; /* IE8 proofing */
   color: rgba(255,255,255,0.75);
   border-bottom: 2px solid transparent;
+  text-shadow: 0 1px 3px rgba(0,0,0,.5);
 }
 .masthead-nav > li > a:hover,
 .masthead-nav > li > a:focus {
