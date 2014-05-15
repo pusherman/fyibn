@@ -26,6 +26,7 @@
         </div>
     </div>
 
+    <hr>
 
     @foreach($post->comments as $comment)
     <div class="row">
