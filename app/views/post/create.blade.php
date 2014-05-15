@@ -20,11 +20,11 @@
         </label>
     </div>
     <br>
-    
+
     <div class="form-group">
         <input type="text" name="url" class="form-control" placeholder="Link">
     </div>
-    
+
     <button type="submit" class="btn btn-default">Submit</button>
 </form>
 
