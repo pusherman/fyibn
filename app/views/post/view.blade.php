@@ -29,10 +29,10 @@
     <hr>
 
     @foreach($post->comments as $comment)
-    <div class="row">
+    <div class="row comment">
         <div class="col-md-12">
             <div class="comment" style="margin-bottom:15px">
-                <p>{{ $comment->user->username }} &middot; {{ $comment->created_at->diffForHumans() }}</p>
+                <p><small>{{ $comment->user->username }} &middot; {{ $comment->created_at->diffForHumans() }}</small></p>
                 <p>{{ $comment->body }}</p>
             </div>
         </div>
@@ -49,6 +49,5 @@
             </form>
         </div>
     </div>
-
 
 @stop
