@@ -38,6 +38,7 @@
                     {{ HTML::nav_item('post', 'Post' ) }}
                     {{-- HTML::nav_item('inbox', 'Inbox') --}}
                     {{-- HTML::nav_item("users", 'Users' ) --}}
+                    {{ HTML::nav_item('logout', 'Logout' ) }}
                 </ul>
             </div>
         </div>
